@@ -1,0 +1,12 @@
+.footer {
+  color: #fff;
+  background-color: #0066b3;
+  padding: 50px 0;
+}
+
+.footer__inner {
+  @include fix-cont($medium, 15px);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

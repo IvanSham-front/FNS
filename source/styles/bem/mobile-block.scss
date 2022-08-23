@@ -1,0 +1,48 @@
+.mobile-block {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 13px 0;
+  & .danger {
+    color: $error;
+  }
+
+}
+
+.mobile-block__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.mobile-block__sum {
+  font-size: 16px;
+  text-align: right;
+}
+
+.mobile-block__row_small {
+  font-weight: 400;
+  margin: 0;
+  & :nth-child(2) {
+    margin-top: 10px;
+  }
+} 
+
+.mobile-block__row_grey {
+  color: $neutral60;
+}
+
+.mobile-block__title {
+  font-size: 14px;
+  line-height: 16px;
+  & h4 {
+    font-weight: 400;
+  }
+  & span {
+    display: block;
+    color: $neutral60
+  }
+}

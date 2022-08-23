@@ -1,0 +1,31 @@
+.header {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 9px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 9px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 9px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header__inner {
+  @include fix-cont(($medium - 50px), 15px);
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  background: url('../img/logo.svg') center no-repeat;
+  background-size: contain;
+  width: 67px;
+  height: 70px;;
+}
+
+
+.header__title {
+  margin-left: 16px;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  color: $neutral70;
+  text-transform: uppercase;
+}

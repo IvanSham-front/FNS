@@ -1,0 +1,50 @@
+.main-block {
+  background-color: $white;
+}
+
+.main-block__inner {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.main-block__sums {
+  display: flex;
+  justify-content: flex-start;
+  padding: 22px 24px;
+  background-color: $neutral10;
+  @media (max-width: $small) {
+    flex-direction: column;
+  }
+  & > div {
+   display: flex;
+   & b {
+    margin: 0 8px 0 16px;
+   } 
+  }
+  & div:nth-child(1) {
+    padding-right: 24px;
+    margin-right: 24px;
+    border-right: 1px solid $neutral40;
+    @media (max-width: $small) {
+      border: none;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.main-block__table {
+  margin: 20px;
+  padding: 0 12px;
+  min-width: calc(100% - 40px);
+  @media (max-width: $small) {
+    display: none;
+  }
+}
+
+.main-block__table-list {
+  margin: 0 20px;
+  @media (min-width: $small) {
+    display: none;
+  }
+}

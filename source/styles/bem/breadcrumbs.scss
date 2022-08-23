@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.breadcrumbs__item {
+  color: $neutral60;
+  margin-right: 17px;
+  &:nth-child(1) {
+    &::after {
+      content: '/';
+      margin-left: 17px;
+      font-size: .8rem;
+      font-weight: bold;
+    }
+  }
+  & a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.breadcrumbs__item_active {
+  color: $info;
+}

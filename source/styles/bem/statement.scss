@@ -1,0 +1,40 @@
+.statement {
+  background: $white;
+}
+
+.statement__inner {
+  padding: 40px 60px;
+}
+
+.statement__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.statement__list {
+  color: $info;
+  margin-top: 25px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 150px;
+  @media (max-width: $medium) {
+    max-height: inherit;
+  }
+  & li {
+    margin-bottom: 20px;
+    flex: 1 1 auto;
+  }
+
+  & a {
+    position: relative;
+    background: url('../img/arrow.svg') right no-repeat;
+    &::after {
+      content: '';
+      margin-left: 35px;
+    }
+  }
+}

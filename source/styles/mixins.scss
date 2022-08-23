@@ -1,0 +1,24 @@
+@mixin fix-cont($width, $padding) {
+	max-width: $width;
+	padding: 0 $padding;
+}
+
+@mixin flex-box($flow, $content) {
+	display: flex;
+	flex-flow: $flow;
+	justify-content: $content;
+}
+
+@mixin font($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+}
+
+@mixin circle {
+	border-radius: 50%;
+	border-width: 0;
+}
+
+@mixin transform( $translate, $rotate, $scale) {
+	transform: translate($translate) rotate($rotate) scale($scale) ;
+}

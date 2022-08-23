@@ -1,0 +1,50 @@
+
+body {
+	min-width: 320px;    
+	margin: 0;
+	font-family: "Open Sans", "Arial",  sans-serif;
+	font-size: 16px;
+	color: $neutral90;
+	background: linear-gradient(180deg, #E1EBF7 9.19%, #F2F5FA 33.31%, #F3F6FB 98.11%);
+	line-height: normal;
+	overflow-x: hidden;
+}
+
+body.modal-active {
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.fixed-container {
+	max-width: 320px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@include fix-cont(($big - 150px), 25px);
+	@media (max-width: $small) {
+		max-width: $small;
+	}
+	@media (max-width: $medium) {
+		@include fix-cont($medium, 40px)
+	}
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 ;
+  border:0 ;
+  height: 1px; 
+  width: 1px; 
+  overflow: hidden;
+}
+
+.shadow-block {
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.18);
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.18);
+}

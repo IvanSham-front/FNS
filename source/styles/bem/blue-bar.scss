@@ -1,0 +1,43 @@
+.blue-bar {
+  background-color: $info;
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+}
+
+.blue-bar__list {
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  @media (max-width: $small) {
+    overflow: hidden;
+    font-size: 15px;
+  }
+}
+
+.blue-bar__item {
+  padding: 12px 20px;
+  @media (max-width: $small) {
+    min-width: 160px;
+  }
+}
+
+.blue-bar__item_active {
+  background-color: $infoLigth;
+}
+
+.blue-bar__arrows {
+  display: none;
+  @media (max-width: $medium) {
+    display: flex;
+    visibility: hidden;
+  }
+}
+
+.blue-bar:hover {
+  & .blue-bar__arrows {
+    visibility: visible;
+  }
+}

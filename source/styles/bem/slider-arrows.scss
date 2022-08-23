@@ -1,0 +1,28 @@
+.slider-arrows {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 15px;
+  padding: 0 5px;
+}
+
+.slider-arrows__left, .slider-arrows__right {
+  width: 40px;
+  height: 40px;
+  opacity: .7;
+  -ms-opacity: .7;
+  -webkit-opacity: 70%;
+  border-radius: 50%;
+  border: none;
+  background: url('../img/arrow.svg') center no-repeat;
+  background-color: $white;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slider-arrows__left {
+  transform: rotate(180deg);
+}
